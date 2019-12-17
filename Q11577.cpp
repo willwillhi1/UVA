@@ -25,7 +25,6 @@ int main(){
 	while(amount){
 		string s;
 		getline(cin,s);
-		//char ans[200];
 		int len = s.size();
 		int num = 0,max = 0;
 		//cout << s << endl;
