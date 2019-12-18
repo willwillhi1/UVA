@@ -18,4 +18,4 @@ int main(){
 		else
 			cout << "There are " << ans[n] << " ways to produce " << n << " cents change." << endl;
 	}
-}
+
