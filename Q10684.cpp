@@ -24,6 +24,6 @@ int main(){
 			temp = 0;
 		}
 		if(ans != -1) cout << "The maximum winning streak is " << ans << "." << endl;
-		else if(ans == -1) cout << "Losing streak." <<endl;
+		else if(ans == -1) cout << "Losing streak." << endl;
 	}
 }
