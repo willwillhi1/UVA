@@ -14,7 +14,8 @@ int main(){
 		string str;
 		for(int i=1,j;i <= W;i++){
 			getline(cin, str);
-			stringstream ss(str);
+			stringstream ss;
+			ss << str;
 			ss >> j;
 			while(ss >> j){
 				map[i][j] = true;
