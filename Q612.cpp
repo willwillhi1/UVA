@@ -46,4 +46,5 @@ int main(){
 				if(order[j] == i) cout << DNA[j] << endl;
 		}
 	}
+	return 0;
 }
