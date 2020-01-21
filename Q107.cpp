@@ -27,7 +27,7 @@ int main(){
 		}
 		else{ 
 			while(i / N != 1 && j / (N+1) != 1){
-				cout << "in" << endl;
+				//cout << "in" << endl;
 				if(i % N != 0 || j % (N+1) != 0){
 					N++;
 					i = num;
