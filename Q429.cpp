@@ -40,7 +40,7 @@ int main(){
 			if(str == "*") break;
 			s.push_back(str);
 		}
-		//cin.ignore();
+		cin.ignore();
 		int size = s.size();
 		for(int i = 0;i < size;i++){
 			for(int j = 0;j < size;j++){
@@ -53,10 +53,22 @@ int main(){
 				}
 			}
 		}
-		string str1,str2;
-		int count = 2;
-		while(count--){
-			cin >> str1 >> str2;
+		char c;
+		while((c = getchar()) != EOF){
+			string str1 = "",str2 = "";
+			if(c == '\n') break;
+			str1.push_back(c);
+			while(c = getchar()){
+				//cout << c << endl;
+				if(c == ' ') break;
+				str1.push_back(c);
+			}
+			while(c = getchar()){
+				//cout << c << endl;
+				if(c == '\n') break;
+				str2.push_back(c);
+			}
+			//cout << str1 << " " << str2 << endl;
 			visited[str1] = 0;
 			bfs(str1, graph);
 			cout << str1 << " " << str2 << " " << dis[str2] << endl;
