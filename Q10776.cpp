@@ -81,8 +81,7 @@ int main(){
 		cin >> r;
 		DFS(0, r);
 		sort();
-		for(int i = 0;i < ansv.size();i++) cout << ansv[i] << ' ';
-		cout << endl;
+		for(int i = 0;i < ansv.size();i++) cout << ansv[i] << endl;
 		init();
 	}
 }
