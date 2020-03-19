@@ -12,10 +12,7 @@ int main(){
 		int size = str.size();
 		for(int i = 0;i < size;i++) s.push(str[i]);
 		v.push_back(s);
-		//char c = getchar();
-		//cout << str << endl;
 		if(s.top() == '.'){
-			//cout << "hi" << endl;
 			size = v.size();
 			for(int i = 0;i < size;i++){
 				while(!v[i].empty()){
