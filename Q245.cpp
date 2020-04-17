@@ -22,6 +22,7 @@ int main(){
 			while(c = getchar()){
 				if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')){s.push_back(c);}
 				else{
+					//add new data
 					current -> str = s;
 					if(head == NULL) head = current;
 					else{pre -> next = current;}
@@ -45,7 +46,7 @@ int main(){
 						find_ptr = find_ptr -> next;
 					}
 					cout << find_ptr->str << c;
-					//move repeat element to the front
+					//move repeat data to the front
 					if(count != 1){
 						pre_ptr -> next = find_ptr-> next;
 						find_ptr -> next = NULL;
@@ -56,6 +57,7 @@ int main(){
 				}
 			}
 		}
+		//print other character
 		else{cout << c;}
 	}
 	return 0;
